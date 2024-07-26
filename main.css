@@ -9,7 +9,7 @@ html, body, div {
     font-style: normal;
 }
 
-#nav {
+/* #nav {
     background-color: #e7ac0e;
     padding: 10px;
     width: 100%;
@@ -17,22 +17,46 @@ html, body, div {
     padding: 0;
     text-align: center;
     height: 25px;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
 }
 
 #nav a {
     text-decoration: none;
     color: #ffffff;
     padding-right: 10px;
-    float: right;
+    margin-right: 10px;
+} */
+#nav {
+    background-color: #e7ac0e;
+    padding: 10px 0; /* Ensure padding is uniform */
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    height: 25px;
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Align items vertically in the center */
+    flex-wrap: wrap;
+}
+
+#nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding-right: 10px;
     margin-right: 10px;
 }
 .container {
-    display: inline-block; /* Shrink to fit its content */
-    overflow: hidden; /* Clearfix for floats */
+    display: flex; /* Shrink to fit its content */
+    justify-content: center; /* Clearfix for floats */
+    flex-wrap: wrap;
+    flex-direction: row;
     margin-top: 35px;
 }
 .card {
-    float: left; /* Float cards next to each other */
+    display: flex; /* Float cards next to each other */
+    flex-direction: column;
     width: 200px; 
     margin: 10px; /* Space between cards */
     padding: 20px;
@@ -70,8 +94,9 @@ html, body, div {
     /* background-color: blue; */
     margin-top: 20px;
 }
-.company p{
-    float: left;
+/* .company p{
+    display: flex;
+    justify-content: flex-start;
     margin: 0;
     margin-left: 10px;
     padding-left: 10px;
@@ -79,4 +104,15 @@ html, body, div {
     background-color: #e7ac0e;
     padding: 0;
     height: 0;
+} */
+.company p {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding-left: 10px;
+    color: #ffffff;
+    background-color: #e7ac0e;
+}
+.menu {
+    background-color: #e7ac0e;
 }
